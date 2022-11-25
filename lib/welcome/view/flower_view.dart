@@ -1,4 +1,4 @@
-import 'package:flutter/material.dart';
+/*import 'package:flutter/material.dart';
 import 'package:flutter_application_1/welcome/view/item.dart';
 
 class FlowerView extends StatefulWidget {
@@ -29,4 +29,4 @@ class _FlowerViewState extends State<FlowerView> {
       ),
     );
   }
-}
+}*/

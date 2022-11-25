@@ -15,6 +15,8 @@ class _FlowerViewState extends State<FlowerView> {
       floatingActionButton: FloatingActionButton(
         onPressed: () {
           print(model.list.length);
+          print(model.list.length);
+          print(model.list.length);
           setState(() { 
             model.addFlower(Flower("red", "daisy"));
           });

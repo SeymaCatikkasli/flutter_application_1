@@ -1,3 +1,5 @@
+import 'dart:developer';
+
 import 'package:flutter/material.dart';
 import 'package:flutter_application_1/view/profile/widget/person_image_widget.dart';
 
@@ -11,24 +13,26 @@ class ProfileTopWidget extends StatelessWidget {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        const SizedBox(
-          height: 44.5,
-        ),
+       const SizedBox(
+         height: 39,
+       ),
         IconButton(
-          onPressed: () {},
+          onPressed: () {
+            var test = MediaQuery.of(context).devicePixelRatio;
+            log('$test');
+
+          },
           icon: const Icon(Icons.arrow_back_ios_new),
         ),
-        const SizedBox(
-          height: 43.5,
-        ),
+        
         Container(
           alignment: Alignment.topCenter,
           child: Column(
+            
             children: const [
+              SizedBox(height: 21,),
               PersonImageWidget(),
-              SizedBox(
-                height: 16,
-              ),
+              SizedBox(height: 8,),
               Text("Jenny Wilson",
                   style: TextStyle(
                     fontFamily: 'Ubuntu',
@@ -37,9 +41,7 @@ class ProfileTopWidget extends StatelessWidget {
                     fontWeight: FontWeight.w500,
                     fontStyle: FontStyle.normal,
                   )),
-              SizedBox(
-                height: 8,
-              ),
+              SizedBox(height: 4,),
               Text("Beginner",
                   style: TextStyle(
                     fontFamily: 'Ubuntu',

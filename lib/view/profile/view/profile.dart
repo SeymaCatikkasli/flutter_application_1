@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_application_1/view/profile/widget/profile_bottom_widget.dart';
 import 'package:flutter_application_1/view/profile/widget/profile_middle_widget.dart';
 
 import '../widget/profile_top_widget.dart';
@@ -8,15 +9,17 @@ class ProfilePage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Column(
-      children: const [
-        ProfileTopWidget(),
-        SizedBox(height: 30,),
-        ProfileMiddleWidget(),
-        
-      ],
+    return SingleChildScrollView(
+      child: Column(
+        children: const [
+          ProfileTopWidget(),
+          SizedBox(
+            height: 38,
+          ),
+          ProfileMiddleWidget(),
+          ProfileBottomWidget(),
+        ],
+      ),
     );
   }
 }
-
-

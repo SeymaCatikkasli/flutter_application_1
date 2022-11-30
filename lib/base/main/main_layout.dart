@@ -20,7 +20,7 @@ class _MainLayoutState extends State<MainLayout> {
     setState(() {
       _selectedIndex = index;
       log('Index: $_selectedIndex');
-      print(_selectedIndex);
+      
     });
   }
 

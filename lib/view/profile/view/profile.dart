@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_application_1/view/profile/widget/input_textile.dart';
 import 'package:flutter_application_1/view/profile/widget/profile_bottom_widget.dart';
 import 'package:flutter_application_1/view/profile/widget/profile_middle_widget.dart';
+import 'package:flutter_application_1/view/profile/widget/rectangle_input.dart';
 
 import '../widget/profile_top_widget.dart';
 
@@ -15,9 +17,11 @@ class ProfilePage extends StatelessWidget {
           ProfileTopWidget(),
           SizedBox(
             height: 38,
+            
           ),
           ProfileMiddleWidget(),
           ProfileBottomWidget(),
+          MyWidget()
         ],
       ),
     );

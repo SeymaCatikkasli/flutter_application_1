@@ -12,6 +12,7 @@ class FranctionalWidget extends StatelessWidget {
           height: 250,
           width: 150,
         ),
+        const FractionalTranslation(translation: Offset(-1,2))
       ],
     );
   }

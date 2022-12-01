@@ -7,7 +7,7 @@ abstract class FormStyle {
       isCollapsed: false,
       hintMaxLines: 5,
       enabledBorder: OutlineInputBorder(
-        
+         
         borderRadius: BorderRadius.all(Radius.circular(0.0)),
         borderSide: BorderSide(
           

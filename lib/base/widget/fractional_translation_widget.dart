@@ -9,10 +9,18 @@ class FranctionalWidget extends StatelessWidget {
       children: [
         Container(
           color: Colors.blueGrey,
-          height: 250,
-          width: 150,
+          height: 50,
+          width: 50,
         ),
-        const FractionalTranslation(translation: Offset(-1,2))
+         FractionalTranslation(translation: const Offset(1,-1),
+        child: Container(
+          color: Colors.purpleAccent,
+          height: 50,
+          width: 50,
+        ),),
+         FractionalTranslation(translation: const Offset(1, -1),
+        child: Container(color: Color.fromARGB(255, 2, 11, 26),height: 50,width: 50,),),
+        
       ],
     );
   }

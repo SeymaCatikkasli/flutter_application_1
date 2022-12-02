@@ -39,8 +39,8 @@ class _TabPageSelectorState extends State<TabPageSelector>
         alignment: Alignment.center,
         children: <Widget>[
           TabBarView(
-            controller: controller,
-            children: widgets,
+            controller:controller,
+            children:widgets,
           ),
           Positioned(
             bottom: 40,
@@ -51,7 +51,7 @@ class _TabPageSelectorState extends State<TabPageSelector>
           ),
         ],
       ),
-      floatingActionButton: const ButtonBar(
+      floatingActionButton:  ButtonBar(
         children: [
           FloatingActionButton.small(
             onPressed: () {
@@ -60,7 +60,7 @@ class _TabPageSelectorState extends State<TabPageSelector>
             },
             hoverElevation: 0,
             elevation: 0,
-            child: Icon(Icons.navigate_next),
+            child: const Icon(Icons.navigate_next),
           )
         ],
       ),

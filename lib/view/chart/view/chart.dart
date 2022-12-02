@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_application_1/base/widget/flutter_flexible_widget.dart';
+import 'package:flutter_application_1/base/widget/flutter_fitted_box.dart';
 
 
 class ChartPage extends StatelessWidget {
@@ -8,7 +8,7 @@ class ChartPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      child: const FlexibleWidget(),
+      child: const FlutterFittedBoxWidget()
     );
   }
 }
